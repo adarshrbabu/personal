@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Freaky a Personal Category Bootstrap Responsive Website Template | Contact :: W3layouts</title>
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets/css/style-starter.css">
+  <!-- Template CSS -->
+  <link href="//fonts.googleapis.com/css?family=Spartan:400,500,600,700,900&display=swap" rel="stylesheet">
+  <!-- Template CSS -->
+
+</head>
+
+<body>
+
+
+  <!-- /contact-form -->
+  <section class="w3l-contact-main">
+    <div class="contact-infhny py-5">
+      <div class="container py-lg-3">
+        <div class="top-map">
+          <div class="map-content-9">
+            <form action="https://sendmail.w3layouts.com/submitForm" method="post">
+              <div class="form-top1">
+                <h3 class="hny-title text-center mb-0">Drop me a line</h3>
+                <p class="mb-lg-5 mb-4 text-center">Interested in working together? Please let me know.</p>
+                <div class="form-top">
+
+                  <div class="form-top-left">
+
+                    <input type="text" name="w3lName" id="w3lName" placeholder="Name" required="">
+                    <input type="number" name="w3lPhone" placeholder="Your phone number" required="">
+                    <input type="email" name="w3lSender" id="w3lSender" placeholder="Email*" required="">
+                    <input type="text" name="w3lSubject" id="w3lName" placeholder="Subject" required="">
+                  </div>
+                  <div class="form-top-righ">
+                    <textarea name="w3lMessage" id="w3lMessage" placeholder="Message*" required=""></textarea>
+                  </div>
+                </div>
+                <div class="text-lg-right text-center">
+                  <button type="submit">Submit Now</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="cont-details">
+            <ul class="address two">
+              <li><span class="fa fa-map-marker" aria-hidden="true"></span>kuttipuram</li>
+              <li><span class="fa fa-envelope" aria-hidden="true"></span><a
+                  href="mailto:info@example.com">adarshrbabu4350@gmail.com</a></li>
+              <li><span class="fa fa-phone" aria-hidden="true"></span>+91 7025878395</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+
+  </section>
+  <!-- //contact-form -->
+
+  <!-- footer -->
+  <footer class="w3l-footer-16">
+    <div class="footer-content py-lg-5 py-4 text-center">
+      <div class="container">
+        <div class="row copy-right">
+          <div class="col-lg-6 footer-left text-lg-left text-center">
+            <h6>© 2020 Freaky.Made with <span class="fa fa-heart" aria-hidden="true"></span> love.Design by <a
+                href="https://w3layouts.com/" target="_blank">
+                W3Layouts</a></h6>
+          </div>
+          <div class="col-lg-6 footer-right text-lg-right text-center">
+            <ul class="footer-gd-16">
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="share-icons-footer ml-lg-4">
+              <a href="#"><span class="fa fa-facebook"></span></a>
+              <a href="#"><span class="fa fa-twitter"></span></a>
+              <a href="#"><span class="fa fa-linkedin"></span></a>
+            </div>
+          </div>
+        </div>
+        <button onclick="topFunction()" id="movetop" title="Go to top">
+          <span class="fa fa-angle-up"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- move top -->
+    <script>
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction()
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("movetop").style.display = "block";
+        } else {
+          document.getElementById("movetop").style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <!-- //move top -->
+    <script>
+      $(function () {
+        $('.navbar-toggler').click(function () {
+          $('body').toggleClass('noscroll');
+        })
+      });
+    </script>
+  </footer>
+  <!-- //footer -->
+</body>
+
+</html>
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<!-- disable body scroll which navbar is in active -->
+<script>
+  $(function () {
+    $('.navbar-toggler').click(function () {
+      $('body').toggleClass('noscroll');
+    })
+  });
+</script>
+<!--/MENU-JS-->
+<script>
+  $(window).on("scroll", function () {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 80) {
+      $("#site-header").addClass("nav-fixed");
+    } else {
+      $("#site-header").removeClass("nav-fixed");
+    }
+  });
+
+  //Main navigation Active Class Add Remove
+  $(".navbar-toggler").on("click", function () {
+    $("header").toggleClass("active");
+  });
+  $(document).on("ready", function () {
+    if ($(window).width() > 991) {
+      $("header").removeClass("active");
+    }
+    $(window).on("resize", function () {
+      if ($(window).width() > 991) {
+        $("header").removeClass("active");
+      }
+    });
+  });
+</script>
+<!--//MENU-JS-->
+<!-- /aos -->
+<script src="assets/js/aos.js"></script>
+<script src="assets/js/aosindex.js"></script>
+<!-- //aos -->
+<!-- disable body scroll which navbar is in active -->
+<!-- //jQuery-Photo-filter-lightbox-portfolio-plugin -->
+<script src="assets/js/bootstrap.min.js"></script>
