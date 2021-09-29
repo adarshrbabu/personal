@@ -18630,5 +18630,33 @@ a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
+.valid-alert{
+  color: white;
+  font-size: 11px;
+}
+
+#name-alert{
+  display: none;
+}
+
+#email-alert{
+  display:none;
+}
+.namelength{
+  
+  font-size: 11px;
+}
+.w3l-contact-main button {
+  font-size: 15px;
+  cursor: pointer;
+  line-height: 25px;
+  padding: 11px 94px;
+  border-radius: 6px;
+  transition: 0.3s ease;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid #ffffff;
+  transition: 0.3s ease;
+}
 
 /*# sourceMappingURL=style-freedom.css.map */
