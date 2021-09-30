@@ -10,7 +10,9 @@
   <link rel="stylesheet" href="assets/css/style-starter.css">
   <!-- Template CSS -->
   <link href="//fonts.googleapis.com/css?family=Spartan:400,500,600,700,900&display=swap" rel="stylesheet">
+ 
   <!-- Template CSS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
 
 </head>
 
@@ -23,7 +25,7 @@
       <div class="container py-lg-3">
         <div class="top-map">
           <div class="map-content-9">
-            <form action="" id="submit-form" method="post" role="form" class="php-email-form">
+            <form action="" id="submit-form"  role="form" >
               <h3 class="hny-title text-center mb-0">Drop me a line</h3>
               <h3>  &nbsp;</h3>
               <h3>  &nbsp;</h3>
@@ -67,6 +69,25 @@
    
 
   </section>
+  <script>
+    $("#submit-form").submit((e)=>{
+        e.preventDefault()
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbwly29gHW4MWUEtGIKpjaEGlKafbPrRo55x_Pn4Rs1BHvQ2pa8_sVYZaTFgZqsQAq0r/exec",
+            data:$("#submit-form").serialize(),
+            method:"post",
+            success:function (response){
+                alert("Form submitted successfully")
+                window.location.reload()
+                //window.location.href="https://google.com"
+            },
+            error:function (err){
+                alert("Something Error")
+
+            }
+        })
+    })
+</script>
   <!-- //contact-form -->
 
   <!-- footer -->
@@ -154,7 +175,7 @@ if(name.value == ""||phonenumber.value == "" || Email.value == ""|| address.valu
 }
 }
   </script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 
 </body>
 
 </html>
